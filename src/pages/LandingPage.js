@@ -1,5 +1,5 @@
 import React from "react"
-import Hero from "components/hero/FullWidthWithImage"
+import Hero from "components/hero/TwoColumnWithInput"
 
 
 export default function LandingPage() {
@@ -7,4 +7,3 @@ export default function LandingPage() {
         <Hero />
     )
     }
-    
