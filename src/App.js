@@ -6,9 +6,7 @@ import LandingPage from "pages/LandingPage"
 
 function App() {
   return (
-    <AnimationRevealPage>
       <LandingPage/>
-    </AnimationRevealPage>
   )
 }
 
