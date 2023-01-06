@@ -2,12 +2,12 @@ import React from "react"
 import "style.css"
 import "tailwindcss/lib/css/preflight.css"
 import AnimationRevealPage from "helpers/AnimationRevealPage"
-import Hero from "components/hero/FullWidthWithImage"
+import LandingPage from "pages/LandingPage"
 
 function App() {
   return (
     <AnimationRevealPage>
-      <Hero />
+      <LandingPage/>
     </AnimationRevealPage>
   )
 }
