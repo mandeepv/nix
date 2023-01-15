@@ -1,7 +1,6 @@
 import {React}  from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import {setError} from 'react';
 import {error} from 'react';
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import { Container as ContainerBase } from "components/misc/Layouts";
@@ -78,7 +77,7 @@ function Login() {
     if (email === '1234@x.com' && password === '1234') {
        navigate('/dashboard');
     } else {
-       setError("Invalid email or password");
+       navigate("/login");
     }
   }
 
