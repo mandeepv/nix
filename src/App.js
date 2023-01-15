@@ -14,8 +14,8 @@ function App() {
   <HashRouter>
     <Routes>
         <Route exact path="/" element={<LandingPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route exact path="/login" element={<LoginPage />} />
+        <Route exact path="/dashboard" element={<DashboardPage />} />
     </Routes>
   </HashRouter>
 
