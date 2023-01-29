@@ -7,6 +7,7 @@ import LoginPage from "pages/LoginPage_dontuse"
 import LoginPage2 from "pages/LoginPage"
 import DashboardPage from "pages/DashboardPage"
 import { HashRouter, Routes, Route } from "react-router-dom"
+import SignUp from "pages/SignUpPage"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/nix" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/signup" element={<SignUp />} />
     </Routes>
   </HashRouter>
 
