@@ -28,7 +28,7 @@ const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:t
 const Form = tw.form`mt-8 md:mt-10 text-sm flex flex-col max-w-sm mx-auto md:mx-0`
 const Input = tw.input`mt-6 first:mt-0 border-b-2 py-3 focus:outline-none font-medium transition duration-300 hocus:border-primary-500`
 const Textarea = styled(Input).attrs({as: "textarea"})`
-  ${tw`h-24`}
+  ${tw`h-24`} 
 `
 
 const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
@@ -36,7 +36,7 @@ const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
 export default ({
   subheading = "Contact Us",
   heading = <>Feel free to <span tw="text-primary-500">get in touch</span><wbr/> with us.</>,
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "Have a question or for our team? We'd love to hear from you! Fill out the form below and our influencer marketing experts will reach out to you.",
   submitButtonText = "Send",
   formAction = "#",
   formMethod = "get",
