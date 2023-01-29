@@ -1,4 +1,7 @@
-import React from "react";
+import {React}  from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import {error} from 'react';
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import { Container as ContainerBase } from "components/misc/Layouts";
 import tw from "twin.macro";
@@ -52,22 +55,23 @@ const IllustrationImage = styled.div`
   ${props => `background-image: url("${props.imageSrc}");`}
   ${tw`m-12 xl:m-16 w-full max-w-sm bg-contain bg-center bg-no-repeat`}
 `;
+const logoLinkUrl = "#";
+const illustrationImageSrc = illustration;
+const headingText = "Sign Up To NIX";
+const socialButtons = [
+];
+const submitButtonText = "Sign Up";
+const SubmitButtonIcon = LoginIcon;
+const forgotPasswordUrl = "#";
+const signupUrl = "#";
 
 
+function SignUp() {
+    
 
-export default ({
-  logoLinkUrl = "#",
-  illustrationImageSrc = illustration,
-  headingText = "Sign In To NIX",
-  socialButtons = [
-  ],
-  submitButtonText = "Sign In",
-  SubmitButtonIcon = LoginIcon,
-  forgotPasswordUrl = "#",
-  signupUrl = "#",
 
-}) => (
-  <AnimationRevealPage>
+  return (
+    <AnimationRevealPage>
     <Container>
       <Content>
         <MainContainer>
@@ -88,24 +92,31 @@ export default ({
                 ))}
               </SocialButtonsContainer>
               <Form>
-                <Input type="email" placeholder="Email"/>
+                <Input type="email" placeholder="Email" />
                 <Input type="password" placeholder="Password" />
                 <SubmitButton type="submit">
                   <SubmitButtonIcon className="icon" />
                   <span className="text">{submitButtonText}</span>
                 </SubmitButton>
+                <p tw="mt-6 text-xs text-gray-600 text-center">
+                  I agree to abide by treact's{" "}
+                  <a href="/#" tw="border-b border-gray-500 border-dotted">
+                    Terms of Service
+                  </a>{" "}
+                  and its{" "}
+                  <a href="/#" tw="border-b border-gray-500 border-dotted">
+                    Privacy Policy
+                  </a>
+                </p>
+
+                <p tw="mt-8 text-sm text-gray-600 text-center">
+                  Already have an account?{" "}
+                  <a href="/#" tw="border-b border-gray-500 border-dotted">
+                    
+                    Sign In
+                  </a>
+                </p>
               </Form>
-              <p tw="mt-6 text-xs text-gray-600 text-center">
-                <a href={forgotPasswordUrl} tw="border-b border-gray-500 border-dotted">
-                  Forgot Password ?
-                </a>
-              </p>
-              <p tw="mt-8 text-sm text-gray-600 text-center">
-                Dont have an account?{" "}
-                <a href={signupUrl} tw="border-b border-gray-500 border-dotted">
-                  Sign Up
-                </a>
-              </p>
             </FormContainer>
           </MainContent>
         </MainContainer>
@@ -116,3 +127,6 @@ export default ({
     </Container>
   </AnimationRevealPage>
 );
+                }
+
+export default SignUp;
