@@ -52,11 +52,9 @@ export default () => {
       <Content>
         <SixColumns>
           <Column>
-            <ColumnHeading>Main</ColumnHeading>
+            <ColumnHeading>Help</ColumnHeading>
             <LinkList>
-              <LinkListItem>
-                <Link href="#">Blog</Link>
-              </LinkListItem>
+              
               <LinkListItem>
                 <Link href="#">FAQs</Link>
               </LinkListItem>
@@ -71,14 +69,12 @@ export default () => {
           <Column>
             <ColumnHeading>Product</ColumnHeading>
             <LinkList>
+              
               <LinkListItem>
-                <Link href="#">Log In</Link>
+                <Link href="#">Businesses</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Personal</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Business</Link>
+                <Link href="#">Influencers</Link>
               </LinkListItem>
               <LinkListItem>
                 <Link href="#">Team</Link>
@@ -86,28 +82,24 @@ export default () => {
             </LinkList>
           </Column>
           <Column>
-            <ColumnHeading>Press</ColumnHeading>
+            <ColumnHeading>Why Us</ColumnHeading>
             <LinkList>
               <LinkListItem>
-                <Link href="#">Logos</Link>
+                <Link href="#">Free Consultation</Link>
               </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Events</Link>
-              </LinkListItem>
+              
               <LinkListItem>
                 <Link href="#">Stories</Link>
               </LinkListItem>
               <LinkListItem>
-                <Link href="#">Office</Link>
+                <Link href="#">Features</Link>
               </LinkListItem>
             </LinkList>
           </Column>
           <Column>
             <ColumnHeading>Legal</ColumnHeading>
             <LinkList>
-              <LinkListItem>
-                <Link href="#">GDPR</Link>
-              </LinkListItem>
+              
               <LinkListItem>
                 <Link href="#">Privacy Policy</Link>
               </LinkListItem>
@@ -123,7 +115,7 @@ export default () => {
             <SubscribeNewsletterContainer>
               <ColumnHeading>Subscribe to our Newsletter</ColumnHeading>
               <SubscribeText>
-                We deliver high quality blog posts written by professionals weekly. And we promise no spam.
+                Stay in the loop with the latest updates in the industry and exciting new products for you to try out.
               </SubscribeText>
               <SubscribeForm method="get" action="#">
                 <Input type="email" placeholder="Your Email Address" />
@@ -136,9 +128,9 @@ export default () => {
         <ThreeColRow>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoText>NIX</LogoText>
           </LogoContainer>
-          <CopywrightNotice>&copy; 2018 Treact Inc. All Rights Reserved.</CopywrightNotice>
+          <CopywrightNotice>&copy; 2023 NIX Inc. All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
               <FacebookIcon />
