@@ -63,24 +63,15 @@ export default () => {
     <AnimationRevealPage>
       
       <Light></Light>
-      <Content>
-      <PrimaryAction>START NEW CAMPAIGN</PrimaryAction>
-      </Content>
-            <TabGrid
-        heading={
-          <>
-            Your <HighlightedText>campaigns</HighlightedText>
-          </>
-        }
-      />
-
       <Pricing
-        subheading={<Subheading>Pricing</Subheading>}
+        subheading={<Subheading>Plans Available</Subheading>}
         heading={
           <>
             Reasonable & Flexible <HighlightedText>Plans.</HighlightedText>
           </>
         }
+        description="Choose the plan that works for you"
+        primaryButtonText="Add to Cart"
         plans={[
           {
             name: "Personal",

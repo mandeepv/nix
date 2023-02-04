@@ -67,11 +67,11 @@ const signupUrl = "#";
 
 
 function Login() {
-    
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
-
+ 
   function handleSubmit(e) {
     e.preventDefault();
     if (email === '1234@x.com' && password === '1234') {
